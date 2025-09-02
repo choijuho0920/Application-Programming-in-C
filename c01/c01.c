@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-//#pragma warning(disable:4996)
-//#pragma warning(disable:6031)
+
 #include <stdio.h>						
 #include <stdlib.h>
 #include <time.h>
@@ -9,34 +8,34 @@
 
 int main(void)
 {
-	//º¯¼ö ¼±¾ğ
+	//ë³€ìˆ˜ ì„ ì–¸
 	int n[SIZE];
 	int total = 0;
 	int max, min;
 	double avg = 0.0;
 
-	//·£´ı ³­¼ö »ı¼º
+	//ëœë¤ ë‚œìˆ˜ ìƒì„±
 	srand(time(NULL));
 	for (int i = 0; i < SIZE; i++) {
 		n[i] = rand() % 101;			//(rand() % 100)+1;	
 	}
 
-	//ÃÑÇÕ ±¸ÇÏ±â
+	//ì´í•© êµ¬í•˜ê¸°
 	for (int i = 0; i < SIZE; i++) {
 		total += n[i];
 	}
 
-	//Ãâ·Â
+	//ì¶œë ¥
 	for (int i = 0; i < SIZE; i++) {
 		printf("%3d\t", n[i]);
 		if ((i + 1) % 10 == 0) printf("\n");
 	}
 
-	//Æò±Õ ±¸ÇÏ±â
+	//í‰ê·  êµ¬í•˜ê¸°
 	avg = (double)total / SIZE;
 
 
-	//ÃÖ´ë ÃÖ¼Ò ±¸ÇÏ±â
+	//ìµœëŒ€ ìµœì†Œ êµ¬í•˜ê¸°
 	max = 0;
 	min = 0;
 	for (int i = 1; i < SIZE; i++) {
@@ -45,11 +44,12 @@ int main(void)
 	}
 	printf("avg = %.1f \n max = %d \n min = %d", avg, n[max], n[min]);
 	
-	//¼±ÅÃÁ¤·Ä Selection Sort 
+	
 
 
 
 		
 	return 0;
 }
+
 
