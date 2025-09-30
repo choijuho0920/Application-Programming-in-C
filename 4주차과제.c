@@ -14,7 +14,7 @@ void all_sold(int n, int sold[]);
 // R_stock 함수는 사용되지 않으므로 제거했습니다.
 double total_sold(int n, int* sold);
 void percent_total(int total_t, int n, int* in_stock);
-// ✨ 수정: lack 함수의 프로토타입에 names 인자 추가
+// 수정: lack 함수의 프로토타입에 names 인자 추가
 void lack(int* inventory, int n, char names[][MAX_NAME_LEN]);
 void change_name(int n, char names[][MAX_NAME_LEN]);
 void print_status(int n, int* in_stock, int* sold, int* inventory, char names[][MAX_NAME_LEN]);
